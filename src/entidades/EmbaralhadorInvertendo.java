@@ -9,6 +9,6 @@ public class EmbaralhadorInvertendo implements Embaralhador {
 
 		StringBuffer sb = new StringBuffer(palavra);
 		sb.reverse();
-		return sb.toString();// TODO Auto-generated method stub
+		return sb.toString();
 	}
 }

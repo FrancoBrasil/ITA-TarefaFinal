@@ -3,7 +3,7 @@ package entidades;
 import interfaces.Embaralhador;
 import interfaces.MecanicaDoJogo;
 
-public class MecanicaMorteSubita implements MecanicaDoJogo {
+public class MecanicaTresChances implements MecanicaDoJogo {
 	
 	private int vida, pontos;
 	String palavra;
@@ -12,8 +12,8 @@ public class MecanicaMorteSubita implements MecanicaDoJogo {
 	BancoDePalavra bp = new BancoDePalavra();
 	FabricaEmbaralhador fe = new FabricaEmbaralhador();
 		
-		public MecanicaMorteSubita(){
-			this.vida = 1;
+		public MecanicaTresChances(){
+			this.vida = 3;
 			this.pontos = 0;
 			novaPalavra();
 			setPalavraDepois();
@@ -44,7 +44,7 @@ public class MecanicaMorteSubita implements MecanicaDoJogo {
 
 	@Override
 	public void acerta(int n) {
-		this.pontos += n;
+		this.pontos += n * 2;
 		
 	}
 

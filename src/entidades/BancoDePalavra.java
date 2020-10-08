@@ -41,6 +41,8 @@ public class BancoDePalavra {
 	}
 	
 	public String buscaPalavra() {
-		return palavra;
+		Random r = new Random();
+		int n = r.nextInt(palavras.size());
+		return palavras.get(n);
 	}
 }
