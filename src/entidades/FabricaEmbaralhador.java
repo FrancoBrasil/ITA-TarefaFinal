@@ -11,7 +11,7 @@ public class FabricaEmbaralhador {
 		if (r.nextInt(2) == 0) {
 			return new EmbaralhadorRandomico();
 		}
-		return new EmbaralhadorPilha();
+		return new EmbaralhadorInvertendo();
 	}
 
 }

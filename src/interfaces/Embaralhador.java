@@ -2,6 +2,6 @@ package interfaces;
 
 public interface Embaralhador {
 
-	String embaralhar(String string);
+	String embaralhar(String palavra);
 
 }
